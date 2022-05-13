@@ -83,6 +83,9 @@
  );
 
 
+ 	
+$logo_url = plugin_dir_url( __DIR__).'images/hermes-raw-logo-website.png';
+
 
  $saveData =  get_post_meta($post->ID,'saved_formula');
  $dataList = json_decode($saveData[0],true);
@@ -339,6 +342,9 @@
 
                 </div>
                 <div class="sidebar_options">
+                  <div class="hermeshLogo">
+                    <img src="<?php echo $logo_url; ?>" alt="hermeshRaw" />
+                  </div>
                   <ul>
                     <li step="stepCompleted">
                       <button type="button" class="option" <?php if(!empty($filterDataOrignal)) { echo 'step="stepCompleted"'; }  ?> id="RERoption">RER</button>
