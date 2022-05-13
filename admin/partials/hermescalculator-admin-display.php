@@ -91,8 +91,6 @@
  $repeator = [];
 
 
-
-
  if(!empty($dataList)){
    $lists = array('rer','group-b','dailyintake','feeding','PageRecommendation','ProductRecommendation');
    foreach($dataList as $keys => $values){
@@ -113,6 +111,7 @@
  if(empty($filterData)){
     $filterData = array('nothing','ProductRecommendation' => array(0));
  }
+
 
 ?>
 <!-- This file should primarily consist of HTML with a little bit of PHP. -->
@@ -271,9 +270,9 @@
                     <div class="repeater_form" id="ProductRecommendationInner">
                         <div class="form-group">
                         <?php $query = new WP_Query(array('post_type'=>'product','posts_per_page'=>-1)); ?>
-                        <div class="select">
+                        <div class="select" style="height:6em">
 
-                        <select name="ProductRecommendation[]" id="ProductRecommendationData" disabled="true" multiple>
+                        <select name="ProductRecommendation[]" id="ProductRecommendationData"  multiple>
                             <option value="">------ Select Product ------</option>
                             <?php if($query->have_posts()) : while($query->have_posts()) : $query->the_post(); 
                            
