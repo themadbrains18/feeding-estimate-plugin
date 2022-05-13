@@ -66,6 +66,7 @@ class Hermescalculator_Admin {
 		add_action( 'save_post', [$this,'save_post_formula'],10,3);
 
 	}
+
 	
 	function save_post_formula( $post_id ,$post, $update ) {
 

@@ -61,7 +61,7 @@ input::-webkit-inner-spin-button {
 /* sec css start */
 .hermesRaw_calculator_sec {
     background-image: url('../images/demo-background.svg'),
-        linear-gradient(to bottom, #000, #92298f);
+        linear-gradient(to bottom, #ed6436, #ed6436);
     padding: 85px 0;
     min-height: 100vh;
     height: 100%;
@@ -77,7 +77,7 @@ input::-webkit-inner-spin-button {
 }
 
 .add_Btn [type='button'] {
-    background: #1c1f2e;
+    background: #ed6436;
     border: none;
     outline: none;
     border-radius: 9px 0 9px 0;
@@ -565,7 +565,7 @@ p.error_msg {
 .label_item, .form_items, .form-group {
     position: relative;
 }
-/* 
+
 div#postbox-container-1 {
    visibility: hidden !important;
-} */
+}
